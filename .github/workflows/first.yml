@@ -1,0 +1,20 @@
+name: workflow2
+on:
+     push:
+    #    branches: [ "main" ]
+      #  workflow_dispatch:
+env:
+   DAY: Monday
+jobs:
+   saloni-job2:
+      runs-on: self-hosted
+      env:
+        USERNAME: Vipul
+      steps:
+     
+       - uses: actions/checkout@v3
+
+       - name: Run a one-line script
+         run: echo "$USERNAME" today is "$DAY"
+
+            
