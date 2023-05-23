@@ -9,7 +9,7 @@ jobs:
    saloni-job2:
       runs-on: self-hosted
       env:
-        USERNAME: Vipul
+        USERNAME: saloni
       steps:
      
        - uses: actions/checkout@v3
