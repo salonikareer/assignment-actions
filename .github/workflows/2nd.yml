@@ -1,0 +1,14 @@
+name: workflow3
+on:
+    #  push:
+    #    branches: [ "main" ]
+       workflow_dispatch:
+jobs:
+   saloni-job2:
+      runs-on: self-hosted
+      env:
+        USERNAME: Saloni
+      steps:
+       - uses: actions/checkout@v3
+       - name: Run a one-line script
+         run: echo hello, "$USERNAME" 
